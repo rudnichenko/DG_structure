@@ -138,25 +138,42 @@
         <a href="#" class="blue">
           <img src="./img/ava1.jpg" alt="" class="ava">
         </a>
-        <div class="accordion accordion-flush" id="accordion1">
+        <div class="accordion accordion-flush" id="accordion accordion-flush">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-heading1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+            <div class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapse1">
                 <div class="info blue">
                   <h5>Head law</h5>
                   <h5>First name here</h5>
                 </div>
               </button>
-            </h2>
-            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordion1">
-              <div class="accordion-body">
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="accordion-body" id="child1">
                 <ul class="departments">
-                  <li>Departments</li>
-                  <li>Departments</li>
-                  <li>Departments</li>
-                  <li>Departments</li>
-                  <li>Departments</li>
-                  <li>Departments</li>
+                  <li data-bs-toggle="collapse" data-bs-target="#collapseOneA">
+                    <h5 class="accordion-header">Department A</h5>
+                  </li>
+                  <div class="accordion-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseOneA">
+                    <ul class="people">
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                    </ul>
+                  </div>
+                  <li data-bs-toggle="collapse" data-bs-target="#collapseOneB">
+                    <h5 class="accordion-header">Department B</h5>
+                  </li>
+                  <div class="accordion-body accordion-collapse collapse" data-bs-parent="#child1" id="collapseOneB">
+                    <ul class="people">
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                      <li><a href="#">worker1</a></li>
+                    </ul>
+                  </div>
                 </ul>
               </div>
             </div>
